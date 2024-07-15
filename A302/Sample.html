@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Sample</title>
+    <link rel="stylesheet" href="../bootstrap_5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.min.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        h1{
+            text-align: center;
+        }
+        h1 span{
+            color: red;
+        }
+        .texend{
+            text-align: end;
+        }
+        #buttoninput{
+            color: red;
+            border: solid 1px red;
+        }
+        div{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>QUẢN LÝ HỌC SINH <span>TRƯỜNG THPT ABC</span></h1>
+     <div class="thongtin d-flex row ">
+       <div class="name col-6">
+        <label class="form-check-label " for="">Họ Tên Học Sinh</label>
+        <input class="form-control " type="text" placeholder="Họ tên học viên">
+       </div>
+       <div class="sex col-3 ">
+        <p>Giới Tính</p>
+       <div class="checkboxsex d-flex gap-2 ">
+        <div class="nam form-check col-2 ">
+            <input class="form-check-input  " type="radio" value="nam" id="nam">
+            <label for="nam">Nam</label>
+        </div>
+        <div class="nu form-check col-2 ">
+            <input type="radio" class="form-check-input " value="nu" id="nu">
+            <label for="nu" class="form-check-label ">Nữ</label>
+        </div>
+        <div class="khac form-check col-3  ">
+            <input type="radio" class="form-check-input " value="khac" id="khac">
+            <label for="khac" class="form-check-label ">Khác</label>
+        </div>
+       </div>
+       </div>
+       <div class="ngaysinh col-3 ">
+        <label for="" class="form-check-label ">Ngày Sinh</label>
+        <input type="date" class="form-control ">
+       </div>
+       <div class="khoilop col-6">
+          <label for="" class="form-check-label ">Khối Lớp</label>
+          <select name="" id="khoi" class="form-select ">
+            <option value="chon" selected>Chọn Khối Lớp Học</option>
+            <option value="khoi10">Khối 10</option>
+            <option value="khoi11">Khối 11</option>
+            <option value="khoi12">Khối 12</option>
+          </select>
+       </div>
+       <div class="lophoc col-6">
+            <label for="" class="form-check-label ">Lớp Học</label>
+            <select name="" id="lop" class="form-select ">
+                <option value="chon" selected>Chọn Lớp Học ...</option>
+                <option value="1">Lớp A</option>
+                <option value="2">Lớp B</option>
+                <option value="3">Lớp C</option>
+            </select>
+       </div>
+       <div class="diemtoan col-4">
+        <label for="" class="form-check-label ">Điểm Toán</label>
+        <input type="text" class="form-control texend" placeholder="HTML CSS">
+       </div>
+       <div class="diemly col-4">
+        <label for="" class="form-check-label ">Điểm Lý</label>
+        <input type="text" class="form-control texend" placeholder ="JavaScript">
+       </div>
+      <div class="diemhoa col-4">
+        <label for="" class="form-check-label ">Điểm Hóa</label>
+        <input type="text" class="form-control texend" placeholder="jQuery">
+       </div>
+       <button type="button" class="col-2 btn ms-3" id="buttoninput">Lưu Thông Tin</button>
+
+      </div>
+
+      <H1>Danh Sách Học Sinh</H1>
+      <table class="table ">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Họ Và Tên</th>
+                <th scope="col">Giới Tính</th>
+                <th scope="col">Ngày Sinh</th>
+                <th scope="col">Khối</th>
+                <th scope="col">Lớp Học</th>
+                <th scope="col">M.Toán</th>
+                <th scope="col">M.Lý</th>
+                <th scope="col">M.Hóa</th>
+                <th scope="col">Đ.TB</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+      </table>
+    </div>
+    <script src="Sample.js" ></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+.body{
+    width: 1800px;
+    text-align: center;
+    align-content: center;
+    padding: 20px;
+ margin: auto;
+
+}
+.col-12{
+    background-color: gray;
+}
+.row{
+ padding-bottom: 10px;
+}
+.logo{
+    text-align: left;
+}
+.logo .col-12{
+    align-content: center;
+    padding-left: 50px;
+    height: 80px;
+}
+.navi .col-12{
+    align-content: center;
+   height: 40px;
+}
+.head_banner{
+    margin-bottom: 10px;
+}
+.head_banner .col-12{
+    align-content: center;
+    height: 240px;
+}
+.side_area{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.bar{
+  
+    width: 25%;
+}
+.bar .col-12{
+    align-content: center;
+    height: 480px;
+}
+.area{
+    
+    width: 75%;
+}
+.area .col-12{
+    align-content: center;
+    height: 480px;
+}
+.footer .col-12{
+    align-content: center;
+    height: 80px;
+}

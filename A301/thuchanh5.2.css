@@ -1,0 +1,12 @@
+.container{
+    border: solid black 1px;
+    text-align: center;
+    align-content: center;
+    padding-bottom: 30px;
+
+}
+.thongtin{
+    margin-top: 50px;
+    height: 150px;
+    border: solid 1px black;
+}

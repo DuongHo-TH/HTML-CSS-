@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.2</title>
+    <link rel="stylesheet" href="../bootstrap_5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="stylesheet" href="3.3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="body">
+            <div class="Condition">
+                <div class="Specific-Related">
+                    <div class="Specific">
+                        <H1>Specific</H1>
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="Firstname">First name contrains</label>
+                                <input id="Firsname" type="text" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col-4">
+                                <label for="Lastname">Last name contains</label>
+                                <input id="Lastname" type="text" class="form-control" placeholder="Last name">
+                            </div>
+                            <div class="col-4">
+                                <label for="Email">Email contains</label>
+                                <input id="Email" type="text" class="form-control" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="Corre">Correspondence</label>
+                                <select name="" id="Corre" class="form-select" multiple>
+                                    <option value="1">Doesn't matter</option>
+                                    <option value="2"></option>
+                                    <option value="3"></option>
+                                </select>
+
+                            </div>
+                            <div class="col-4">
+                                <label for="date">Date joined</label>
+                                <input id="date" type="date" class="form-control">
+                            </div>
+                            <div class="col-4">
+                                <input type="text" class="form-control mt-4" />
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="Related">
+                        <h1>Related</h1>
+                        <div class="col-12">
+                            <label for="">Team</label>
+                            <select name="" id="" class="form-select">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Permissions">
+                    <h1>Permissions</h1>
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="Group">Group</label>
+                            <input id="Group" type="text" class="form-select ">
+                        </div>
+                        <div class="col-6">
+                            <label for="Permission">Permission</label>
+                            <input id="Permission" type="text" class="form-select ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Attributes">
+                <h1>Attributes</h1>
+                <div class="Active">
+                    <label for="">Active</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="Active1" checked>
+                        <label class="form-check-label" for="Active1">
+                            Doesn't matter
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="Active2">
+                        <label class="form-check-label" for="Active2">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="Active3">
+                        <label class="form-check-label" for="Active3">
+                            No
+                        </label>
+                    </div>
+                </div>
+                <div class="OnlineStatus">
+                    <label for="">Online status</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="OnlineStatusName" id="OnlineStatusID1"
+                            checked>
+                        <label class="form-check-label" for="OnlineStatusID1">
+                            Doesn't matter
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="OnlineStatusName" id="OnlineStatusID2">
+                        <label class="form-check-label" for="OnlineStatusID2">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="OnlineStatusName" id="OnlineStatusID3">
+                        <label class="form-check-label" for="OnlineStatusID3">
+                            No
+                        </label>
+                    </div>
+                </div>
+                <div class="Supperuserstatus">
+                    <label for="">Supperusser status</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Supperusser1" checked>
+                        <label class="form-check-label" for="Supperusser1">
+                            Doesn't matter
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Supperusser2">
+                        <label class="form-check-label" for="Supperusser2">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Supperusser3">
+                        <label class="form-check-label" for="Supperusser3">
+                            No
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="row justify-content-end ">
+                <div class="col-2 search">
+                    <button class="btn btn-light  border border-1">
+                        Cancel
+                    </button>
+                    <button class="btn btn-search ms-3 ">
+                        <i class="fas fa-search"></i> <span class="ps-0">Search</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

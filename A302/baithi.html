@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAI THI</title>
+    <link rel="stylesheet" href="../bootstrap_5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="baithi.css">
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="head row ">
+            <div class="emp col-8">
+            <h1>Employee <b>Management</b></h1>
+            </div>
+            <div class="search-add col-4 text-end ">
+                <input type="text" id="search" placeholder="Search...">
+                <button id="buttonadd"><i class="fa fa-plus" aria-hidden="true"></i> Add New</button>
+            </div>
+        </div>
+       <div class="khoitable d-flex gap-5 ">
+         <table class="table ">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Department</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="bodytable">
+
+
+            </tbody>
+            <tfoot>
+                <tr><td scope>Total Employee</td></tr>
+                
+                <tr>
+                    <td>Administration : <span id="countadmin"></span></td>
+                
+                    <td>Customer Service : <span id="countcus"></span></td>
+                
+                    <td>Hunman Resource : <span id="counthun"></span></td>
+                </tr>
+            </tfoot>
+          </table>
+          <div class="addnew" id="addemploy">
+            <label for="name" class="form-label  ">
+                Name
+            </label>
+            <input type="text" id="name" class="form-control " placeholder ="Enter name">
+            <span id="errname"></span>
+            <label for="">Department</label>
+            <select class="form-select " name="" id="select">
+                <option value="0"> Select Department</option>
+                <option value="Administration"> Administration</option>
+                <option value="Customer Service"> Customer Service</option>
+                <option value="Hunman Resource"> Hunman Resource</option>
+            </select>
+            <span id="errdep"></span>
+            <label for="phone">Phone</label>
+            <input type="text" class="form-control " id="phone" placeholder ="Enter phone. Ex: +84 xxx xxx xxx">
+             <span id="errphone"></span>
+            <div class="buttonsub d-flex  justify-content-end mt-3 ">
+            <button id="cancel">Cancel</button>
+            <button id="Submit">Submit</button>
+            </div>
+          </div>
+          <div class="update">
+            <label for="name" class="form-label  ">
+                Name
+            </label>
+            <input type="text" id="nameupdate" class="form-control " >
+            <label for="">Department</label>
+            <select class="form-select " name="" id="selectupdate">
+                <option value="0"> Select Department</option>
+                <option value="Administration"> Administration</option>
+                <option value="Customer Service"> Customer Service</option>
+                <option value="Hunman Resource"> Hunman Resource</option>
+                
+            </select>
+            <label for="phoneupdate">Phone</label>
+            <input type="text" class="form-control " id="phoneupdate" >
+             <div class="buttonsub d-flex  justify-content-end mt-3 ">
+            <button id="cancelupdate">Cancel</button>
+            <button id="Submitupdate">Update</button>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+    <script src="baithi.js"></script>
+</body>
+</html>

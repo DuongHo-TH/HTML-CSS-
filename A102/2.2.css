@@ -1,0 +1,121 @@
+.body{
+    position: relative;
+    margin: 0 auto;
+    width: 1900px;
+    height: 1000px;
+}
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.lopphu{
+    position: absolute;
+    background-color: black;
+    opacity: 0.1;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.hienthi{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+   
+}
+.box1{
+    width: 33.33%;
+    height: 100%;
+    z-index: 2;
+    font-size: 45px;
+    color: #fff;
+}
+.boxgiua{
+    padding-top: 10%;
+    width: 33.33%;
+    height: 100%;
+    color: azure;
+    opacity: 0;
+   
+
+}
+h1{
+    font-size: 60px;
+}
+p{
+    font-size: 28px;
+    color: #808080;
+}
+b{
+    font-size: 30px;
+}
+.hang2{
+    padding-bottom: 25px;
+    margin: 0 auto;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.trai{
+    align-content: center;
+    width: 45%;
+    height: 40px;
+    margin: 0 auto;
+    border: solid 1px #808080;
+    color: #808080;
+}
+.phai{
+    align-content: center;
+    width: 45%;
+    height: 40px;
+    margin: 0 auto;
+    border: solid 1px #fff;
+}
+.hangcuoi{
+    align-content: center;
+   align-items: center;
+    width: 40%;
+    height: 40px;
+    margin: 0 auto;
+    border: solid 1px #fff;
+}
+.box3{
+   opacity: 0.5;
+    align-content: center;
+   font-size: 100px;
+   color: #fff;
+   
+}
+.box1{
+    opacity: 0.5;
+    align-content: center;
+    font-size: 100px;
+    color: #fff;
+}
+.box1 .i {
+    width: 110px;
+    height: 100px;
+    padding-left: 1px;
+}
+.box3 .i3 {
+    width: 110px;
+    height: 100px;
+    padding-left: 550px; 
+}
+.box3:hover {
+    opacity: 1;
+    transition: 3s;
+   
+}
+.box1:hover{
+    opacity: 1;
+    transition: 3s;
+}
+.boxgiua:hover {
+    opacity: 1;
+    transition: 2s;
+}

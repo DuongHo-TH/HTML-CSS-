@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="fullName">Họ và tên:</label>
+    <input type="text" id="fullName">
+    <br>
+    <label for="birthdate">Ngày sinh:</label>
+    <input type="date" id="birthdate">
+    <br>
+    <label for="gender">Giới tính:</label>
+    <select id="gender">
+        <option value="male">Nam</option>
+        <option value="female">Nữ</option>
+    </select>
+    <br>
+    <button onclick="displayInfo()">Hiển thị thông tin</button>
+
+    <script>
+        function displayInfo() {
+            const fullName = document.getElementById("fullName").value;
+            const birthdate = new Date(document.getElementById("birthdate").value);
+            const gender = document.getElementById("gender").value;
+
+            const currentDate = new Date();
+            const age = currentDate.getFullYear() - birthdate.getFullYear();
+
+            alert(`Họ và tên: ${fullName}\nTuổi: ${age} tuổi\nGiới tính: ${gender}`);
+        }
+    </script>
+</body>
+</html>

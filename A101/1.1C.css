@@ -1,0 +1,106 @@
+.body{
+    margin: 0 auto;
+    width: 1500px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    gap: 1%;
+}
+.body .container1{
+    margin: 0 auto;
+    width: 95%;
+    height: 8%;
+    background-color: rgb(209, 10, 10);
+}
+.body .container2{
+    width: 95%;
+    height: 5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: beige;
+    
+}
+.body .container2 .trai{
+    width: 70%;
+    height: 100%;
+    background-color: blueviolet;
+}
+.body .container2 .phai{
+    width: 29%;
+    height: 100%;
+    background-color: blueviolet;
+    
+}
+.body .container3{
+    width: 95%;
+    height: 35%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.body .container3 .trai{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+  
+}
+.body .container3 .trai .boxtrai{
+    width: 33%;
+    height: 100%;
+    background-color: chocolate;
+}
+.body .container3 .phai{
+    width: 29%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.body .container3 .phai .boxphai{
+    display: flex;
+    flex-direction: column;
+   gap: 1%;
+    width: 30%;
+    height: 100%;
+   
+}
+.body .container3 .phai .boxtrai{
+    width: 68%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+   
+}
+.body .container3 .phai .boxphai .hang{
+    width: 100%;
+    height: 32%;
+    background-color: aqua;
+}
+.body .container3 .phai .boxtrai .hang{
+    background-color: chartreuse;
+    width: 100%;
+    height: 32%;
+    background-color: aqua;
+}
+.body .container4{
+    margin: 0 auto;
+    width: 95%;
+    height: 5%;
+    background-color: blueviolet;
+}
+.body .container5{ 
+    margin: 0 auto;
+     display: flex;
+    justify-content: space-between;
+    width: 95%;
+    height: 35%;
+    
+}
+.body .container5 .box4{
+    width: 24.5%;
+    height: 100%;
+    background-color: chocolate;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.3</title>
+    <link rel="stylesheet" href="7.3.css">
+    <link rel="stylesheet" href="../bootstrap_5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.min.css">
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="inputcard d-flex mb-3 ">
+        <div class="row left col-6 me-5">
+            <h1>Personal Info</h1>
+            <div class="col-6 name  mt-3" >
+                <label for="firstname">First Name</label>
+                <input class="form-control " type="text" id="firstname" placeholder="First Name">
+                <span id="errfirstname"></span>
+            </div>
+            <div class="col-6 lastname  mt-3 ">
+                <label for="lastname">Last Name</label>
+                <input class="form-control " type="text" id="lastname" placeholder="Last Name">
+                <span id="errlastname"></span>
+            </div>
+            <div class="col-6 name  mt-3" >
+                <label for="email">Email</label>
+                <input class="form-control " type="text" id="email" placeholder="Email">
+                <span id="erremail"></span>
+            </div>
+            <div class="col-6 name mt-3 " >
+                <label for="phone">Phone</label>
+                <input class="form-control " type="text" id="phone" placeholder="Phone">
+                <span id="errphone"></span>
+            </div>
+            <div class="col-12 name mt-3 " >
+                <label for="address">Address</label>
+                <input class="form-control " type="text" id="address" placeholder="1234 Main St">
+                <span id="erraddress"></span>
+            </div>
+            <div class="col-6 name mt-3 " >
+                <label for="city">City</label>
+                <input class="form-control " type="text" id="city" placeholder="New York">
+                <span id="errcity"></span>
+            </div>
+            <div class="col-4 name mt-3 " >
+                <label for="state">State</label>
+                <select class="form-select" aria-label="Disabled select example" id="select" >
+                    <option disabled selected>Choose</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <span id="errstate"></span>
+            </div>
+            <div class="col-2 name mt-3 " >
+                <label for="zipcode">Zip Code</label>
+                <input class="form-control " type="text" id="zipcode" >
+                <span id="errzipcode"></span>
+            </div>
+        </div>
+        <div class="row right col-6 ms-5">
+            <h1>Payment Info</h1>
+            <div class="namecar col-12 mt-3">
+                <label for="namecard" >Name on Card</label>
+                <input class="form-control " type="text" id="namecard"  placeholder="John More Doe">
+                <span id="errnamecard"></span>
+            </div>
+            <div class="namecar col-12 mt-3">
+                <label for="cardnumber" >Card Number</label>
+                <input class="form-control " type="text" id="cardnumber"  placeholder="1111-2222-3333-4444">
+                <span id="errcardnumber"></span>
+            </div>
+            <div class="month col-4 pe-1 mt-3">
+                <label for="month">Exp Month</label>
+                <input class="form-control " type="text" id="month" placeholder="07">
+                <span id="errmonth"></span>
+            </div>
+            <div class="month col-4 ps-1 pe-1 mt-3">
+                <label for="year">Exp Year</label>
+                <input class="form-control " type="text" id="year" placeholder="07">
+                <span id="erryear"></span>
+            </div>
+            <div class="month col-4 ps-1 mt-3">
+                <label for="cvv">CVV</label>
+                <input class="form-control " type="text" id="cvv" placeholder="07">
+                <span id="errcvv"></span>
+            </div>
+            <div class="col-4 accepted mt-3">
+                <label for="">Accepted Cards</label>
+                <div class="imgcard d-flex ">
+                <img src="visa.jpg" alt="Visa"><img src="mastercard.jpg" alt="Master Card"><img src="discover.jpg" alt="Discover">
+            </div>
+            </div>
+        </div>
+    </div>
+        <div class="form-check  d-flex col-12">
+            <input class="form-check-input me-2 " type="checkbox" id="checkmeout">
+            <label class="form-check-lable " for="checkmeout">Check me out</label>
+            <span id="errcheckbox"></span>
+             </div>
+             <button class="btn btn-primary mt-2 " id="singin">Sing in</button>
+             <table class="table m-auto text-center">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Zip Code</th>
+                        <th>Name on Card</th>
+                        <th>Card Number</th>
+                        <th>Exp Month</th>
+                        <th>Exp Year</th>
+                        <th>CVV</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="bodytable"></tbody>
+             </table>
+    </div>
+    <script src="7.3.js"></script>
+</body>
+</html>

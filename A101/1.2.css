@@ -1,0 +1,201 @@
+@media screen and (max-width: 600px) {
+    .body {
+        text-align: center;
+
+        width: 500px;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon {
+        width: 100%;
+        height: 3%;
+        background-color: blue;
+    }
+
+    .header {
+        align-content: center;
+        width: 100%;
+        height: 15%;
+        background-color: aqua;
+    }
+
+    .content {
+        align-content: center;
+        width: 100%;
+        height: 30%;
+        background-color: antiquewhite;
+    }
+
+    .boxfeta{
+        width: 100%;
+        height: 50%;
+    }
+    
+
+    .boxfeta .singup {
+        height: 25%;
+        align-content: center;
+        background-color: aquamarine;
+    }
+
+    .boxfeta .feature1 {
+        height: 25%;
+        align-content: center;
+        background-color: tan;
+    }
+
+    .boxfeta .feature2 {
+        height: 25%;
+        align-content: center;
+        background-color: tomato;
+    }
+
+    .boxfeta .feature3 {
+        height: 25%;
+        align-content: center;
+        background-color: seagreen;
+    }
+
+
+}
+
+@media screen and (min-width : 601px) and (max-width : 960px) {
+    .body {
+        width: 760px;
+        height: 800px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .icon {
+        width: 100%;
+        height: 3%;
+        background-color: blue;
+    }
+
+    .header {
+        align-content: center;
+        width: 100%;
+        height: 15%;
+        background-color: aqua;
+    }
+
+    .content {
+        align-content: center;
+        width: 100%;
+        height: 40%;
+        background-color: antiquewhite;
+    }
+
+    .boxfeta {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .boxfeta .singup {
+        width: 50%;
+        height: 50%;
+        align-content: center;
+        background-color: aquamarine;
+    }
+
+    .boxfeta .feature1 {
+        width: 50%;
+        height: 50%;
+        align-content: center;
+        background-color: tan;
+    }
+
+    .boxfeta .feature2 {
+        width: 50%;
+        height: 50%;
+        align-content: center;
+        background-color: tomato;
+    }
+
+    .boxfeta .feature3 {
+        width: 50%;
+        height: 50%;
+        align-content: center;
+        background-color: seagreen;
+    }
+
+}
+
+@media screen and (min-width : 961px) {
+    .body {
+        width: 1920px;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .icon {
+        order: 0;
+        width: 100%;
+        height: 3%;
+        background-color: blue;
+    }
+
+    .header {
+        order: 1;
+        align-content: center;
+        width: 100%;
+        height: 15%;
+        background-color: aqua;
+    }
+
+    .content {
+        order: 3;
+        align-content: center;
+        width: 100%;
+        height: 40%;
+        background-color: antiquewhite;
+    }
+
+    .boxfeta {
+        order: 2;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .boxfeta .singup {
+        order: 4;
+        width: 100%;
+        height: 30%;
+        align-content: center;
+        background-color: aquamarine;
+    }
+
+    .boxfeta .feature1 {
+        order: 1;
+        width: 33%;
+        height: 70%;
+        align-content: center;
+        background-color: tan;
+    }
+
+    .boxfeta .feature2 {
+        order: 2;
+        width: 33%;
+        height: 70%;
+        align-content: center;
+        background-color: tomato;
+    }
+
+    .boxfeta .feature3 {
+        order: 3;
+        width: 33%;
+        height: 70%;
+        align-content: center;
+        background-color: seagreen;
+    }
+
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Hành 6.2</title>
+    <link rel="stylesheet" href="thuchanh6.2.css">
+    <link rel="stylesheet" href="../bootstrap_5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+    <div class="container text-center ">
+        <h1>To Do List</h1>
+        <div class="row position-relative ">
+            <input class="col-10 inputadditem" id="input" type="text" placeholder="Full name">
+            <button class="col-2 additem" id="addItem">Add Item</button>
+            <input type="text" class="col-10 position-absolute inputedit" id="inputedit" placeholder="Nhập Lại Thông Tin mới">
+            <button class="col-2 position-absolute edititem" id="buttonedit">Edit Item</button>
+            <span class="col6 text-danger " id="erro"></span>
+        </div>
+        <ul id="todoList"></ul>
+        <button onclick="cleartodoList()" id="clearList">Clear List </button>
+    </div>
+    <script src="thuchanh6.2.js"></script>
+</body>
+</html>

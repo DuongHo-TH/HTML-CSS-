@@ -1,0 +1,107 @@
+@media  (max-width: 576px) {
+    .container {
+        width: 576px;
+        text-align: center;
+    }
+
+    .first {
+        height: 45px;
+    }
+
+    .header {
+        align-content: center;
+        height: 180px;
+    }
+
+    .content {
+        align-content: center;
+        height: 360px;
+    }
+
+    .signup {
+        align-content: center;
+        height: 120px;
+    }
+
+    .feature {
+        align-content: center;
+        height: 120px;
+    }
+
+}
+
+@media  (min-width : 577px)and (max-width:990px) {
+    .container {
+        width: 960px;
+        text-align: center;
+    }
+
+    .first {
+        height: 45px;
+    }
+
+    .header {
+        align-content: center;
+        height: 180px;
+    }
+
+    .content {
+        align-content: center;
+        height: 360px;
+    }
+
+    .signup {
+        align-content: center;
+        height: 150px;
+    }
+
+    .feature {
+        align-content: center;
+        height: 150px;
+    }
+
+}
+
+@media (min-width: 991px) and (max-width: 1920px) {
+    .container {
+        width: 1920px;
+        text-align: center;
+    }
+
+    .first {
+        order: 0;
+        height: 45px;
+    }
+
+    .header {
+        order: 1;
+        align-content: center;
+        height: 240px;
+    }
+
+    .content {
+        order: 6;
+        align-content: center;
+        height: 360px;
+    }
+
+    .signup {
+        order: 5;
+        align-content: center;
+        height: 80px;
+    }
+
+    .feature {
+        order: 2;
+        align-content: center;
+        height: 220px;
+    }
+}
+
+.signup {
+    background-color: #afccec;
+}
+
+.bg-feature {
+    background-color: #7f7cbd;
+}

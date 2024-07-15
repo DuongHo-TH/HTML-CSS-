@@ -1,0 +1,21 @@
+.accepted{
+ box-sizing: border-box;
+}
+.imgcard{
+    height: 40px;
+    margin: 2px;
+    gap: 2px;
+}
+img{
+    border-radius: 5px;
+}
+label{
+    font-weight: bold;
+}
+span{
+    color: red;
+}
+table{
+    overflow-y: auto;
+}
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn-update {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="todolist">
+        <input type="text" name="" id="input-todo">
+        <button class="btn-add">Add</button>
+        <button class="btn-update">Update</button>
+        <ul class="wrap-todos"></ul>
+    </div>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            function generateUUID() { // Public Domain/MIT
+                var d = new Date().getTime();//Timestamp
+                var d2 = ((typeof performance !== 'undefined') && performance.now && (performance.now() * 1000)) || 0;//Time in microseconds since page-load or 0 if unsupported
+                return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+                    var r = Math.random() * 16;//random number between 0 and 16
+                    if (d > 0) {//Use timestamp until depleted
+                        r = (d + r) % 16 | 0;
+                        d = Math.floor(d / 16);
+                    } else {//Use microseconds since page-load if supported
+                        r = (d2 + r) % 16 | 0;
+                        d2 = Math.floor(d2 / 16);
+                    }
+                    return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+                });
+            }
+            let todolist = [];
+
+
+            $(".btn-add").click(function () {
+                var value = $("#input-todo").val();
+                var id = generateUUID();
+                todolist.push({ id: id, value: value });
+                $("#input-todo").val("");
+                showTodo();
+            });
+
+            function showTodo() {
+                var list = '';
+                todolist.forEach((todo) => {
+                    list += "<li idTodo='" + todo.id + "'><span>" + todo.value + "</span><button class='btn-delete'>Delete</button><button class='btn-edit'>Edit</button></li>";
+                });
+                $('.wrap-todos').html(list);
+            }
+
+            $(document).on("click", ".btn-delete", (function () {
+                // console.log('todolist', todolist);
+                var id = $(this).parent().attr('idTodo');
+                console.log('id', id);
+                // todolist = todolist.filter(todo => todo.id !== id);
+                todolist = todolist.filter(function (todo) {
+                    return todo.id !== id;
+                });
+                console.log('newTodo', todolist);
+                showTodo();
+            }));
+            // var editing;
+            // $(document).on("click", ".btn-edit", (function () {
+
+            //     var valueEdit = $(this).parent().find('span').text();
+            //     console.log(valueEdit);
+            //     $("#input-todo").val(valueEdit);
+            //     $('.btn-update').show();
+            //     $('.btn-add').hide();
+
+            // }));
+
+            // $(".btn-update").click(function () {
+            //     var value = $("#input-todo").val();
+
+            // })
+
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lỗi trang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .error-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .show-error {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        h1 {
+            color: #e74c3c;
+        }
+        p {
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>Trang bạn yêu cầu không tồn tại</h1>
+        <p>Xin lỗi, trang bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.</p>
+        <p>Vui lòng kiểm tra lại đường dẫn hoặc quay lại <a href="/">trang chủ</a>.</p>
+    </div>
+
+    <script>
+        // Khi trang tải xong, thêm lớp 'show-error' để hiển thị nội dung báo lỗi với hiệu ứng transition
+        document.addEventListener('DOMContentLoaded', function() {
+            const errorContainer = document.querySelector('.error-container');
+            errorContainer.classList.add('show-error');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+.body {
+    width: 1800px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    border: solid 1px black;
+}
+
+.row {
+    padding-bottom: 20px;
+}
+
+.imgchinh {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.imgchinh .col-12 {
+    height: 400px;
+}
+ img {
+    width: 100%;
+    height: 100%;
+}
+
+.col-12 {
+    height: 80px;
+    align-content: center;
+    background-color: aquamarine;
+
+}
+
+.col-4 {
+    height: 200px;
+    
+
+}
+.footer{
+   
+    width: 90%;
+    margin: auto;
+}
+.conten{
+    align-content: center;
+    width: 100%;
+    height: 150px;
+    background-color: aquamarine;
+}
+.navi{
+    margin: auto;
+    width: 90%;
+}
+.sub{
+    width: 90%;
+    margin: auto;
+}

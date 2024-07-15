@@ -1,0 +1,22 @@
+.container{
+   margin: 50px;
+   padding: 30px;
+    border: solid 1px black;
+}
+.edititem{
+    right: 0px;
+    z-index: 0;
+}
+.additem{
+    z-index: 1;
+}
+.inputadditem{
+    z-index: 1;
+}
+.inputedit{
+    z-index: 0;
+}
+li{
+    list-style: none;
+    font-size: 25px;
+}

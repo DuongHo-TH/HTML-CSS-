@@ -1,0 +1,12 @@
+.container{
+    padding-top: 10px;
+    border: solid 1px black;
+}
+
+.head{
+    background-color: #435d7d;
+    height: 70px;
+    align-content: center;
+    color: aliceblue;
+    font-size: 28px;
+}

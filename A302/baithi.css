@@ -1,0 +1,37 @@
+@media (max-width : 1200px){
+
+
+    
+}
+button{
+    border-radius: 15px;
+}
+tfoot tr th, tr td{
+    border-bottom: none;
+    
+}
+
+table{
+    width: 70%
+}
+.addnew{
+    width: 30%;
+    display: none;
+}
+.update{
+    width: 30%;
+    display: none;
+}
+.buttondelete{
+    color: #e34724;
+
+}
+.btn-edit{
+  color: #ffc107;
+}
+#buttonadd{
+    background-color: #17a2b8;
+}
+span{
+    color: #e34724;
+}

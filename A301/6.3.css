@@ -1,0 +1,8 @@
+p, .menu, .select{
+    font-family: "Kaushan Script", cursive;
+    padding-bottom: 10px;
+}
+.container{
+    border: solid 1px black;
+}
+

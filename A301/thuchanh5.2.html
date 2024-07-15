@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Hành Bài Tập 5.2
+    </title>
+    <link rel="stylesheet" href="thuchanh5.2.css">
+    <link rel="stylesheet" href="../bootstrap_5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+    <div class="container align-content-center m-auto">
+        <h3 class="pb-5 ">Nhập Thông Tin Người Dùng</h3>
+  
+                <label class="col-1" for="name">Full Name :</label>
+                <input class="col-4 " type="text" id="name" placeholder ="Full Name">
+                <label class="col-1 " for="birthday">Birth Day : </label>
+                <input class="col-2 " id="birthday" type="date">
+               <label  class="col-1" for="sex">Sex: </label>
+               <select class="col-1" name="" id="sex">
+                <option class="col-1" value="male">Nam</option>
+                <option class="col-1" value="female">Nữ</option>
+               </select>    
+               <br>
+               <div class="thongtin" id="noidung">
+                Thông Tin Người Dùng
+                <p id="tt"></p>
+               </div>
+               <button class=" mt-5" id="addbuton"> Hiển Thị Người Dùng</button>
+    </div>
+    <script src="thuchanh5.2.js"></script>
+</body>
+</html>
